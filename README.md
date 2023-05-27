@@ -24,6 +24,7 @@ pip3 install --upgrade pip
 pip3 install fastapi
 sudo apt install vlc
 pip3 install python-vlc
+pip3 install uvicorn
 ```
  
 #### RPM-based (e.g., Fedora, CentOS, Red Hat Enterprise Linux):
@@ -35,12 +36,45 @@ pip3 install --upgrade pip
 pip3 install fastapi
 sudo dnf install vlc
 pip3 install python-vlc
+pip3 install uvicorn
 ```
 
+### Windows
+1. Install Python:
+   - Visit the [Python website](https://www.python.org/downloads/).
+   - Download the latest Python installer for Windows.
+   - Run the installer and follow the instructions. Make sure to check the option "Add Python to PATH" during the installation process.
+
+2. Install pip:
+   - Open the command prompt.
+   - Run the following command to upgrade pip:
+     ```
+     python -m pip install --upgrade pip
+     ```
+
+3. Install FastAPI:
+   - Open the command prompt.
+   - Run the following command to install FastAPI:
+     ```
+     pip install fastapi
+     ```
+
+4. Install VLC:
+   - Visit the [VLC website](https://www.videolan.org/vlc/index.html).
+   - Download the VLC installer for Windows.
+   - Run the installer and follow the instructions.
+
+5. Install vlc-python:
+   - Open the command prompt.
+   - Run the following command to install vlc-python:
+     ```
+     pip install python-vlc
+     ```
+Please make sure to install these dependencies before running the script. Follow the installation instructions for each dependency based on your operating system.
 
 
 
-## Usage
+
 
 ## Usage
 
@@ -53,9 +87,6 @@ Nickelodeon,http://example.com/Nickelodeon
 
 
 2. **Run the ASGI Server:** Use `uvicorn` to run the ASGI server for the application. Open your terminal and navigate to the project directory. 
-    ```
-        cd <your_project_directory>
-    ```
     Run the following command to start the server:
    - If you want to run the server on the default host and port (localhost:8000), use:
      ```
