@@ -85,7 +85,8 @@ Please make sure to install these dependencies before running the script. Follow
 
 ## Usage
 
-1. **Create a CSV File:** First, create a CSV file named `all_channels.csv` and write the names and links of the channels in the following format: `<channel_name>,<channel_link>` (without any spaces). Here's an example of how it should look:
+1. **Create a CSV File:**  
+   First, create a CSV file named `all_channels.csv` and write the names and links of the channels in the following format: `<channel_name>,<channel_link>` (without any spaces). Here's an example of how it should look:
 ```csv
 DiscoveryScience,http://example.com/DiscoveryScience
 Scifi,http://example.com/Scifi
@@ -93,7 +94,8 @@ Nickelodeon,http://example.com/Nickelodeon
 ```
 
 
-2. **Run the ASGI Server:** Use `uvicorn` to run the ASGI server for the application. Open your terminal and navigate to the project directory. 
+2. **Run the ASGI Server:**  
+   Use `uvicorn` to run the ASGI server for the application. Open your terminal and navigate to the project directory. 
     Run the following command to start the server:
    - If you want to run the server on the default host and port (localhost:8000), use:
      ```
@@ -112,7 +114,8 @@ Nickelodeon,http://example.com/Nickelodeon
 
    Replace `<your_app_name>` with the name of your Python application file (without .py).
 
-3. **Access the Application:** Once the server is running, you can access the application by opening a web browser and navigating to `http://localhost:8000`   (replace the port number if you specified a custom port).
+3. **Access the Application:**  
+   Once the server is running, you can access the application by opening a web browser and navigating to `http://localhost:8000`   (replace the port number if you specified a custom port).
 
    The application provides various endpoints for monitoring and interacting with the IPTV channels. Refer to the API documentation or code comments for more details on available endpoints and their functionalities.
 
