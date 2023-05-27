@@ -14,6 +14,7 @@ To begin with, download the dependencies:
   - FastAPI
   - python-vlc
 - VLC media player
+- Uvicorn
 
 #### Debian-based (e.g., Ubuntu, Debian):
 ```bash
@@ -52,11 +53,11 @@ pip3 install uvicorn
      python -m pip install --upgrade pip
      ```
 
-3. Install FastAPI:
+3. Install FastAPI, Uvicorn, VLC, and vlc-python:
    - Open the command prompt.
-   - Run the following command to install FastAPI:
+   - Run the following command to install the necessary packages:
      ```
-     pip install fastapi
+     pip install fastapi uvicorn python-vlc
      ```
 
 4. Install VLC:
@@ -64,12 +65,7 @@ pip3 install uvicorn
    - Download the VLC installer for Windows.
    - Run the installer and follow the instructions.
 
-5. Install vlc-python:
-   - Open the command prompt.
-   - Run the following command to install vlc-python:
-     ```
-     pip install python-vlc
-     ```
+
 Please make sure to install these dependencies before running the script. Follow the installation instructions for each dependency based on your operating system.
 
 
