@@ -16,18 +16,18 @@ with open("all_channels.csv", "r") as file:
         channels_dict.update({ch_name: ch_link})
 
 # Define a class which will be used for each new channel.
+
+
 class AddChannel:
-    channels_list = [] # All channels list
+    channels_list = []  # All channels list
 
     def __init__(self, name):
         AddChannel.channels_list.append(self)
 
         self.name = name
         self.link = channels_dict.get(self.name)
-        
+
         print("New channel: {0}".format(self.name))
-
-
 
         # As channels are tested in web, the flags such as "--no-audio" and "--vout dummy" are used,
         # If you want to initiate real vlc application, remove these flags.
@@ -38,9 +38,9 @@ class AddChannel:
             self.player.set_mrl(self.link)
         elif self.link.startswith("udp://"):
             self.player.set_mrl(self.link, "udp://")
-            
-            
+
     # Start a media player for each channel individually.
+
     def play(self):
         print("playerPlay")
         self.player.play()
@@ -51,10 +51,9 @@ class AddChannel:
         # Get the snapshot of the current frame
         self.player.video_take_snapshot(
             0, '{0}.jpg'.format(self.name), 1280, 720)
-        
+
         # Return the taken snapshot to the server
         return FileResponse("{0}.jpg".format(self.name))
-
 
     # Get statistics about media.
 
@@ -85,8 +84,6 @@ class AddChannel:
         return data
 
 
-
-
 app = FastAPI()
 
 # Automatically go through the channels dictionary and add AddChannel object corresponding to the channels.
@@ -100,8 +97,6 @@ channels_list = AddChannel.channels_list
 print('-------------All Channels--------------')
 print(channels_list)
 print('---------------------------------------')
-
-
 
 
 # Roughly said, it is Remote Control of a whole flow of fastAPI
@@ -146,9 +141,9 @@ def get_specific_stats(channel_name: str):
             return {"ERROR": "the channel is not in the list of available channels, please update the list of channels"}
 
     elif type(channels_list) == list:
-        # We iterate through the channels_list, which holds each channel object. 
-        # If we find a channel object whose name matches the channel_name we are searching for, 
-        # we assign that channel object to the outputOBJ variable. 
+        # We iterate through the channels_list, which holds each channel object.
+        # If we find a channel object whose name matches the channel_name we are searching for,
+        # we assign that channel object to the outputOBJ variable.
         # Finally, we display the name and statistics of the channel.
         outputOBJ = None
         for channelOBJ in channels_list:
@@ -176,24 +171,22 @@ def get_channel_screen(channel_name: str):
 
 async def clear_buffer():
     while True:
-        # To clear the buffer, we periodically reload the player for each open channel if the buffer size exceeds a certain value. 
+        # To clear the buffer, we periodically reload the player for each open channel if the buffer size exceeds a certain value.
         # This script runs continuously in a loop every 5 seconds.
-        
+
         print("_____Clearing the buffer______")
         if type(channels_list) == AddChannel:
             stats = channels_list.get_stats()
             buffer = stats["read_bytes"]
             if buffer > 1000:
-                # By stopping and starting the player again, we effectively reset the buffer size to 0. 
-                # This ensures that the buffer is cleared and ready to receive new data.        
+                # By stopping and starting the player again, we effectively reset the buffer size to 0.
+                # This ensures that the buffer is cleared and ready to receive new data.
                 channels_list.player.stop()
                 channels_list.player.play()
-            print("Buffer size: ", str(buffer))
 
         elif type(channels_list) == list:
 
             for channelOBJ in channels_list:
-                print("-------"+str(channelOBJ),channelOBJ.name+"-------")
                 channel_stats = channelOBJ.get_stats()
                 channel_buffer = channel_stats["read_bytes"]
                 if channel_buffer > 100:
