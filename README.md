@@ -19,7 +19,7 @@ pip3 install --upgrade pip
 pip3 install fastapi
 sudo apt install vlc
 pip3 install python-vlc
-`` 
+```
  
 #### RPM-based (e.g., Fedora, CentOS, Red Hat Enterprise Linux):
 ```bash
@@ -30,7 +30,7 @@ pip3 install --upgrade pip
 pip3 install fastapi
 sudo dnf install vlc
 pip3 install python-vlc
-``
+```
 
 
 
