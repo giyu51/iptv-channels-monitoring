@@ -56,6 +56,10 @@ Use examples liberally, and show the expected output if you can. It's helpful to
 
 ## Project Status
 
-This project has been successfully completed and is ready for use. All the desired features have been implemented, and the script is fully functional. You can now monitor IPTV channels, track their activity and statistics, and perform various operations such as playing channels, updating video frames, retrieving channel statistics, and clearing channel buffers. Feel free to use and customize this script according to your specific requirements. If you encounter any issues or have suggestions for improvement, please open an issue or submit a pull request. Happy monitoring!
+✅ This project has been successfully completed and is ready for use. All the desired features have been implemented, and the script is fully functional. You can now monitor IPTV channels, track their activity and statistics, and perform various operations such as playing channels, updating video frames, retrieving channel statistics, and clearing channel buffers. Feel free to use and customize this script according to your specific requirements.
 
+🐛 If you encounter any issues or have suggestions for improvement, please open an issue or submit a pull request.
 
+🎉 Happy monitoring! 📺🔍📊
+
+Feel free to further customize the emojis or add more if desired.
