@@ -9,6 +9,11 @@
 To begin with, download the dependencies:
 
 ### Dependencies
+- Python >= 3.7
+- Python packages:
+  - FastAPI
+  - python-vlc
+- VLC media player
 
 #### Debian-based (e.g., Ubuntu, Debian):
 ```bash
