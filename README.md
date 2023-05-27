@@ -42,7 +42,15 @@ pip3 install python-vlc
 
 ## Usage
 
-1. **Create the CSV File:** First, create a CSV file named `all_channels.csv`. In this file, write the names and links of the channels in the format `{channel_name,channel_link}` without any spaces. This file will be used to configure the channels for monitoring.
+## Usage
+
+1. **Create a CSV File:** First, create a CSV file named `all_channels.csv` and write the names and links of the channels in the following format: `<channel_name>,<channel_link>` (without any spaces). Here's an example of how it should look:
+```csv
+DiscoveryScience,http://example.com/DiscoveryScience
+Scifi,http://example.com/Scifi
+Nickelodeon,http://example.com/Nickelodeon
+```
+
 
 2. **Run the ASGI Server:** Use `uvicorn` to run the ASGI server for the application. Open your terminal and navigate to the project directory. Run the following command to start the server:
 
