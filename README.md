@@ -9,12 +9,23 @@
 To begin with, download the dependencies:
 
 ### Dependencies
-- Python >= 3.7
-- Python packages:
-  - FastAPI
-  - python-vlc
-- VLC media player
-- Uvicorn
+
+To run this project, you need to have the following dependencies installed:
+
+- 🐍 [Python](https://www.python.org/downloads/): Python is a programming language used by this project.
+
+- 📦 [pip](https://pip.pypa.io/en/stable/): pip is the package installer for Python.
+
+- ⚡️ [FastAPI](https://fastapi.tiangolo.com/): FastAPI is a modern, fast (high-performance) web framework for building APIs with Python.
+
+- 🦄 [Uvicorn](https://www.uvicorn.org/): Uvicorn is a lightning-fast ASGI server for running FastAPI applications.
+
+- 📺 [VLC](https://www.videolan.org/vlc/index.html): VLC is a free and open-source multimedia player that can handle various streaming formats.
+
+- 🐍 [vlc-python](https://pypi.org/project/python-vlc/): vlc-python is a Python binding for the VLC media player library, allowing you to interact with VLC in your Python scripts.
+
+
+## Installation
 
 #### Debian-based (e.g., Ubuntu, Debian):
 ```bash
@@ -104,6 +115,7 @@ Nickelodeon,http://example.com/Nickelodeon
 3. **Access the Application:** Once the server is running, you can access the application by opening a web browser and navigating to `http://localhost:8000`   (replace the port number if you specified a custom port).
 
    The application provides various endpoints for monitoring and interacting with the IPTV channels. Refer to the API documentation or code comments for more details on available endpoints and their functionalities.
+
 
 Please note that you need to have the required dependencies installed and properly configured before running the application.
 
