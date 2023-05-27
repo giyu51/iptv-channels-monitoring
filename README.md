@@ -40,28 +40,22 @@ pip3 install python-vlc
 
 
 
-## Add your files
-
-
-## Integrate with your tools
-
-
-
-
-
-## Test and Deploy
-
-
-
-
-
 ## Usage
 Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
 
 
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+## Authors
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+- [rio51](https://github.com/rio51) - Primary Author
+
+## Acknowledgments
+
+- Thanks to [@someone](https://github.com/someone) for the idea and inspiration to create this project.
+
+
+## Project Status
+
+This project has been successfully completed and is ready for use. All the desired features have been implemented, and the script is fully functional. You can now monitor IPTV channels, track their activity and statistics, and perform various operations such as playing channels, updating video frames, retrieving channel statistics, and clearing channel buffers. Feel free to use and customize this script according to your specific requirements. If you encounter any issues or have suggestions for improvement, please open an issue or submit a pull request. Happy monitoring!
+
+
