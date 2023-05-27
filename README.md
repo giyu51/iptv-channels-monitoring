@@ -116,6 +116,27 @@ Nickelodeon,http://example.com/Nickelodeon
 
    The application provides various endpoints for monitoring and interacting with the IPTV channels. Refer to the API documentation or code comments for more details on available endpoints and their functionalities.
 
+   Following URLs are available:
+
+   - Stats of All Channels: Visit 
+   ```
+   http://localhost:8000/stats
+   ```
+    to view the statistics of all channels collectively.
+
+   - Stats of a Specific Channel: To analyze the statistics of a specific channel, replace <channel_name> in the URL 
+   ```
+   http://localhost:8000/stats/<channel_name>
+   ```
+    with the desired channel's name.
+
+   - Current Image Frame of a Channel: For accessing the current image frame of a channel, go to 
+   
+   ```
+   http://localhost:8000/screen/<channel_name>
+   ```
+   Replace <channel_name> with the name of the channel you wish to view.
+
 
 Please note that you need to have the required dependencies installed and properly configured before running the application.
 
