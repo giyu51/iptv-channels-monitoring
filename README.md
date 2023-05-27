@@ -53,7 +53,7 @@ Nickelodeon,http://example.com/Nickelodeon
 
 
 2. **Run the ASGI Server:** Use `uvicorn` to run the ASGI server for the application. Open your terminal and navigate to the project directory. 
-        ```
+    -    ```
         cd <your_project_directory>
         ```
     Run the following command to start the server:
@@ -66,7 +66,7 @@ Nickelodeon,http://example.com/Nickelodeon
      ```
      uvicorn <your_app_name>:app --host 0.0.0.0
      ```
-    Default port is 8000.
+   
    - If you want to specify a custom port, use:
      ```
      uvicorn <your_app_name>:app --port <your_port>
@@ -74,7 +74,7 @@ Nickelodeon,http://example.com/Nickelodeon
 
    Replace `<your_app_name>` with the name of your Python application file (without .py).
 
-3. **Access the Application:** Once the server is running, you can access the application by opening a web browser and navigating to `http://localhost:8000` (replace the port number if you specified a custom port).
+3. **Access the Application:** Once the server is running, you can access the application by opening a web browser and navigating to `http://localhost:8000`   (replace the port number if you specified a custom port).
 
    The application provides various endpoints for monitoring and interacting with the IPTV channels. Refer to the API documentation or code comments for more details on available endpoints and their functionalities.
 
