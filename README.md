@@ -131,7 +131,7 @@ Nickelodeon,http://example.com/Nickelodeon
    For accessing the current image frame of a channel, go to `http://localhost:8000/screen/<channel_name>`. Replace <channel_name> with the name of the channel you wish to view.
 
 
-Please note that you need to have the required dependencies installed and properly configured before running the application.
+
 
 
 
