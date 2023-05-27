@@ -53,9 +53,9 @@ Nickelodeon,http://example.com/Nickelodeon
 
 
 2. **Run the ASGI Server:** Use `uvicorn` to run the ASGI server for the application. Open your terminal and navigate to the project directory. 
-    -    ```
+    ```
         cd <your_project_directory>
-        ```
+    ```
     Run the following command to start the server:
    - If you want to run the server on the default host and port (localhost:8000), use:
      ```
