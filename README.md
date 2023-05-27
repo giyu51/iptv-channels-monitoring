@@ -41,7 +41,34 @@ pip3 install python-vlc
 
 
 ## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+
+1. **Create the CSV File:** First, create a CSV file named `all_channels.csv`. In this file, write the names and links of the channels in the format `{channel_name,channel_link}` without any spaces. This file will be used to configure the channels for monitoring.
+
+2. **Run the ASGI Server:** Use `uvicorn` to run the ASGI server for the application. Open your terminal and navigate to the project directory. Run the following command to start the server:
+
+   - If you want to run the server on the default host and port (localhost:8000), use:
+     ```
+     uvicorn <your_app_name>:app
+     ```
+
+   - If you want to make the server accessible on all interfaces, use:
+     ```
+     uvicorn <your_app_name>:app --host 0.0.0.0
+     ```
+
+   - If you want to specify a custom port, use:
+     ```
+     uvicorn <your_app_name>:app --port <your_port>
+     ```
+
+   Replace `<your_app_name>` with the name of your Python application file.
+
+3. **Access the Application:** Once the server is running, you can access the application by opening a web browser and navigating to `http://localhost:8000` (replace the port number if you specified a custom port).
+
+   The application provides various endpoints for monitoring and interacting with the IPTV channels. Refer to the API documentation or code comments for more details on available endpoints and their functionalities.
+
+Please note that you need to have the required dependencies installed and properly configured before running the application.
+
 
 
 
@@ -62,4 +89,3 @@ Use examples liberally, and show the expected output if you can. It's helpful to
 
 🎉 Happy monitoring! 📺🔍📊
 
-Feel free to further customize the emojis or add more if desired.
