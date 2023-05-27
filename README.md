@@ -52,8 +52,11 @@ Nickelodeon,http://example.com/Nickelodeon
 ```
 
 
-2. **Run the ASGI Server:** Use `uvicorn` to run the ASGI server for the application. Open your terminal and navigate to the project directory. Run the following command to start the server:
-
+2. **Run the ASGI Server:** Use `uvicorn` to run the ASGI server for the application. Open your terminal and navigate to the project directory. 
+        ```
+        cd <your_project_directory>
+        ```
+    Run the following command to start the server:
    - If you want to run the server on the default host and port (localhost:8000), use:
      ```
      uvicorn <your_app_name>:app
@@ -63,13 +66,13 @@ Nickelodeon,http://example.com/Nickelodeon
      ```
      uvicorn <your_app_name>:app --host 0.0.0.0
      ```
-
+    Default port is 8000.
    - If you want to specify a custom port, use:
      ```
      uvicorn <your_app_name>:app --port <your_port>
      ```
 
-   Replace `<your_app_name>` with the name of your Python application file.
+   Replace `<your_app_name>` with the name of your Python application file (without .py).
 
 3. **Access the Application:** Once the server is running, you can access the application by opening a web browser and navigating to `http://localhost:8000` (replace the port number if you specified a custom port).
 
