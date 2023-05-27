@@ -45,11 +45,11 @@ Use examples liberally, and show the expected output if you can. It's helpful to
 
 
 
-## Authors
+## 👥 Authors
 
 - [rio51](https://github.com/rio51) - Primary Author
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
 - Thanks to [@someone](https://github.com/someone) for the idea and inspiration to create this project.
 
