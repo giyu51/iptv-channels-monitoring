@@ -30,7 +30,7 @@ To run this project, you need to have the following dependencies installed:
 - 🐍 [vlc-python](https://pypi.org/project/python-vlc/): vlc-python is a Python binding for the VLC media player library, allowing you to interact with VLC in your Python scripts.
 
 
-### Dependencies Installation
+### Installation
 
 ##### Debian-based (e.g., Ubuntu, Debian):
 ```bash
