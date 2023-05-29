@@ -1,6 +1,6 @@
 # IptvChannelsMonitoring
 
-## Description
+
 
 📺 **iptv-channels-monitoring** is a Python script built using FastAPI and VLC media player that enables monitoring and tracking of IPTV channels' activity and statistics. The script allows you to add and manage multiple channels, providing functionalities such as playing channels ▶️, updating video frames 🖼️, retrieving channel statistics 📊, and clearing channel buffers 🧹. It utilizes VLC media player's capabilities to handle various stream types, including HTTP, HTTPS, and UDP. The project aims to provide a convenient solution for monitoring IPTV channels and gathering valuable insights about their performance. 🚀
 
