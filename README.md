@@ -152,7 +152,7 @@ This project is licensed under the MIT License 📜.
 
 ## 🙏 Acknowledgments
 
-- Thanks to [@someone](https://github.com/someone) for the idea and inspiration to create this project.
+- Thanks to [@diniliaqil](https://github.com/diniliaqil) for the idea and inspiration to create this project.
 
 
 ## Project Status
