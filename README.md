@@ -13,7 +13,7 @@
 ## Getting started
 To begin with, observe and download dependencies:
 
-### Dependencies
+### :link: Dependencies
 
 To run this project, you need to have the following dependencies installed:
 
@@ -30,7 +30,7 @@ To run this project, you need to have the following dependencies installed:
 - 🐍 [vlc-python](https://pypi.org/project/python-vlc/): vlc-python is a Python binding for the VLC media player library, allowing you to interact with VLC in your Python scripts.
 
 
-### Installation
+### :inbox_tray: Installation
 
 ##### Debian-based (e.g., Ubuntu, Debian):
 ```bash
@@ -88,7 +88,7 @@ Please make sure to install these dependencies before running the script. Follow
 
 
 
-## Usage
+## :hammer_and_wrench: Usage
 
 1. **Create a CSV File:**  
    First, create a CSV file named `all_channels.csv` and write the names and links of the channels in the following format: `<channel_name>,<channel_link>` (without any spaces). Here's an example of how it should look:
@@ -139,7 +139,12 @@ Nickelodeon,http://example.com/Nickelodeon
 
 
 
+## :scroll: License
 
+This project is licensed under the MIT License 📜.
+
+## :raising_hand: Contributing
+🙌 Contributions to AudioVisualizer are welcome! If you have any ideas, improvements, or bug fixes, please submit a pull request 🛠️. For major changes, please open an issue to discuss your ideas beforehand 💡.
 
 ## 👥 Authors
 
