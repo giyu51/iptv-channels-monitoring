@@ -17,7 +17,7 @@ To begin with, observe and download dependencies:
 
 To run this project, you need to have the following dependencies installed:
 
-- 🐍 [Python](https://www.python.org/downloads/): Python is a programming language used by this project.
+- 🐍 [Python >= 3.7](https://www.python.org/downloads/): Python is a programming language used by this project.
 
 - 📦 [pip](https://pip.pypa.io/en/stable/): pip is the package installer for Python.
 
